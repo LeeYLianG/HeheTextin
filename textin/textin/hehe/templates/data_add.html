@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加消费记录</title>
+</head>
+<body>
+<h1>添加数据</h1>
+<form method="POST" action="/info/add/">
+    {% csrf_token %}
+    <div   class="form-group">
+        <label>金额</label>
+        <input type="text"  class="form-control" name="money" placeholder="金额"/>
+    </div>
+
+    <div   class="form-group">
+        <label>日期</label>
+        <input type="text"  class="form-control" name="date" placeholder="日期"/>
+    </div>
+    <div   class="form-group">
+        <label>单号</label>
+        <input type="text"  class="form-control" name="no" placeholder="单号"/>
+    </div>
+
+    <div   class="form-group">
+        <label>商户</label>
+        <input type="text"  class="form-control" name="shop" placeholder="商户"/>
+    </div>
+
+    <div   class="form-group">
+        <label>商户编号</label>
+        <input type="text"  class="form-control" name="shop_no" placeholder="商户编号"/>
+    </div>
+
+    <div   class="form-group">
+        <label>商品</label>
+        <input type="text"  class="form-control" name="sku" placeholder="商品"/>
+    </div>
+
+
+
+
+    <input type="submit" value="确认提交">
+</form>
+</body>
+</html>
